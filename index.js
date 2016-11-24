@@ -1,17 +1,19 @@
 module.exports = function () {
     var funcs = [].slice.call(arguments);
+    var funcsName = funcs.map(function (fun) {
+        return fun.name;
+    })
     return function (req, res, next) {
         var version = funcs.length;
-        try {
-            if (req.params.version) {
-                version = parseInt(req.params.version.substring(1));
-                if (version > funcs.length) {
-                    version = funcs.length;
-                }
+        if (req.params.version) {
+            var index = funcsName.indexOf(req.params.version)
+            if (index !== -1) {
+                funcs[index](req, res, next)
+            }else {
+                funcs[version-1](req, res, next)
             }
-            funcs[version - 1](req, res, next)
-        } catch (err) {
-            funcs[version - 1](req, res, next)
+        }else {
+            funcs[version-1](req, res, next)
         }
     }
 }

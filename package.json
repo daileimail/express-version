@@ -1,6 +1,6 @@
 {
-  "name": "express-version",
-  "version": "1.0.0",
+  "name": "express-router-version",
+  "version": "1.0.1",
   "description": "fro express , router version auto select",
   "main": "index.js",
   "scripts": {
