@@ -1,0 +1,24 @@
+{
+  "name": "express-version",
+  "version": "1.0.0",
+  "description": "fro express , router version auto select",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daileimail/express-version.git"
+  },
+  "keywords": [
+    "express",
+    "version",
+    "router"
+  ],
+  "author": "dlsmart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daileimail/express-version/issues"
+  },
+  "homepage": "https://github.com/daileimail/express-version#readme"
+}
