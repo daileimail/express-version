@@ -1,7 +1,7 @@
 {
   "name": "express-router-version",
-  "version": "1.0.1",
-  "description": "fro express , router version auto select",
+  "version": "1.0.4",
+  "description": "for express , router version auto select",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

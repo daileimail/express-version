@@ -2,9 +2,11 @@
 
 #useage
 
-service:
+npm i express-router-version
+
+service.js
 ```
-    var ev = require('express-version')
+    var ev = require('express-router-version')
 
     var v1 = function(req,res,next){
         res.send('v1');
@@ -17,7 +19,7 @@ service:
 
 ```
 
-router
+router.js
 ```
 var router = require('express').Router();
 
